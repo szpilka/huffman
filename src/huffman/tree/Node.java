@@ -1,6 +1,5 @@
 package huffman.tree;
 
-import java.util.List;
 import java.util.function.Consumer;
 
 public abstract class Node {
@@ -12,12 +11,6 @@ public abstract class Node {
 
     public int count() {
         return count;
-    }
-
-    public abstract List<Node> children();
-
-    public boolean hasChildren() {
-        return !children().isEmpty();
     }
 
     public abstract void setCoding(String coding);

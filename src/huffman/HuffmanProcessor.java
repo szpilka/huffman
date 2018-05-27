@@ -11,7 +11,6 @@ import java.util.Map;
 
 import static java.lang.String.format;
 import static java.util.Map.Entry.comparingByKey;
-import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 public class HuffmanProcessor {
@@ -54,6 +53,6 @@ public class HuffmanProcessor {
             }
             result += codeMap.get(text.charAt(i));
         }
-        return  result;
+        return result;
     }
 }

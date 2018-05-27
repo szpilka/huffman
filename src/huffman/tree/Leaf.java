@@ -1,7 +1,5 @@
 package huffman.tree;
 
-import java.util.Collections;
-import java.util.List;
 import java.util.function.Consumer;
 
 import static java.lang.String.format;
@@ -17,16 +15,6 @@ public class Leaf extends Node {
 
     public char value() {
         return value;
-    }
-
-    @Override
-    public List<Node> children() {
-        return Collections.emptyList();
-    }
-
-    @Override
-    public boolean hasChildren() {
-        return false;
     }
 
     @Override
