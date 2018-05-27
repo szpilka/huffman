@@ -18,6 +18,8 @@ public class TreeGenerator {
             Node second = result.remove(0);
             result.add(new JoinerNode(first.count() + second.count(), first, second));
         }
-        return result.get(0);
+        Node resultNode = result.get(0);
+        resultNode.setCoding("");
+        return resultNode;
     }
 }
